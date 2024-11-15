@@ -3,9 +3,14 @@ import Image from "next/image";
 import ProfileImg from "../../public/img/profileImg.jpg";
 
 export default function Banner() {
-    return <div className="wrapper flex flex-col md:flex-row items-center gap-10 mb-10">
+    return <div className="wrapper flex flex-col md:flex-row items-center gap-10">
         <div className="w-44 h-64 rounded-full">
-            <Image className="w-full h-full rounded-full object-cover" src={ProfileImg} alt="ProfileImg" />
+            <Image 
+                className="w-full h-full rounded-full object-cover" 
+                src={ProfileImg} 
+                alt="Profile Photo"
+                priority
+            />
         </div>
         <div className="flex flex-col items-center md:items-start">
             <h1 className="text-5xl font-bold text-white">Sam Crane</h1>

@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .wrapper {
+    @apply border-b-[1px] border-b-slate-600 py-20;
+  }
+}
+
 ::selection {
   background-color: #47a3f3;
   color: #fefefe;
