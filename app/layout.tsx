@@ -8,9 +8,6 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "./components/footer";
 import { ThemeProvider } from "./components/theme-switch";
 import { metaData } from "./config";
-import Banner from "./components/banner";
-import Aboutme from "./components/about-me";
-import Experience from "./components/experience";
 
 export const metadata: Metadata = {
   metadataBase: new URL(metaData.baseUrl),
@@ -50,7 +47,11 @@ export const metadata: Metadata = {
 
 const cx = (...classes) => classes.filter(Boolean).join(" ");
 
-export default function RootLayout() {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={cx(GeistSans.variable, GeistMono.variable)}>
       <head>
@@ -80,11 +81,9 @@ export default function RootLayout() {
           enableSystem
           disableTransitionOnChange
         >
-          <main className="flex-auto min-w-0 flex flex-col px-6 sm:px-4 md:px-0 max-w-[800px] w-full">
+          <main className="flex-auto min-w-0 flex flex-col px-6 sm:px-4 md:px-0 max-w-[1000px] w-full">
             <Navbar />
-            <Banner />
-            <Aboutme />
-            <Experience />
+            {children}
             <Footer />
             <Analytics />
             <SpeedInsights />
