@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ThemeSwitch } from "./theme-switch";
 import { metaData } from "../config";
+import Image from "next/image";
 
 const navItems = {
   "/blog": { name: "Blog" },
@@ -14,7 +15,26 @@ export function Navbar() {
       <div className="flex flex-col md:flex-row md:items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="text-3xl font-semibold tracking-tight">
-            Sam Crane
+            <div className="flex flex-row items-center gap-5">
+              <Image 
+                src="/img/White-Crane-Logo.png"
+                alt="Crane Logo"
+                className="rounded-full hidden dark:block"
+                width={64}
+                height={64}
+                priority
+              />
+              <Image
+                src="/img/Black-Crane-Logo.png"
+                alt="Crane Logo"
+                className="rounded-full dark:hidden"
+                width={64}
+                height={64}
+                priority
+              />
+              Sam Crane
+            </div>
+            
           </Link>
         </div>
         <div className="flex flex-row gap-4 mt-6 md:mt-0 md:ml-auto items-center">
