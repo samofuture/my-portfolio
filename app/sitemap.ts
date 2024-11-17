@@ -17,5 +17,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: new Date().toISOString().split("T")[0],
   }));
 
-  return [...routes];//, ...blogs];
+  return [...routes, ...blogs];
 }
