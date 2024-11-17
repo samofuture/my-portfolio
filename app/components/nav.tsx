@@ -5,7 +5,7 @@ import Image from "next/image";
 const navItems = {
   "/experience": {name: "Experience"},
   "/projects": { name: "Projects" },
-  "/photos": { name: "Photos" },
+  // "/photos": { name: "Photos" },
 };
 
 export function Navbar() {
