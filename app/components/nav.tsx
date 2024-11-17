@@ -3,7 +3,7 @@ import { ThemeSwitch } from "./theme-switch";
 import Image from "next/image";
 
 const navItems = {
-  "/mdx": {name: "MDX"},
+  "/experience": {name: "Experience"},
   "/projects": { name: "Projects" },
   "/photos": { name: "Photos" },
 };
