@@ -10,5 +10,5 @@ export const metaData = {
 export const socialLinks = {
   github: "https://github.com/samofuture",
   linkedin: "https://www.linkedin.com/in/scrane11",
-  email: "scraneco@gmail.com",
+  email: "mailto:scraneco@gmail.com",
 };
