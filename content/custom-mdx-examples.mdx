@@ -50,21 +50,41 @@ export default function HelloWorld() {
 Nextfolio uses [Next.js Image](https://nextjs.org/docs/basic-features/image-optimization) in MDX for seamless image rendering:
 
 ```
-<Image
-  src="/opengraph-image.png"
-  alt="OpenGraph image"
+<Image 
+  src="/img/White-Crane-Logo.png"
+  alt="Crane Logo"
+  className="hidden dark:block"
   width={640}
-  height={500}
+  height={640}
+  priority
+/>
+<Image
+  src="/img/Black-Crane-Logo.png"
+  alt="Crane Logo"
+  className="dark:hidden"
+  width={640}
+  height={640}
+  priority
 />
 ```
 
 Renders:
 
-<Image
-  src="/opengraph-image.png"
-  alt="OpenGraph image"
+<Image 
+  src="/img/White-Crane-Logo.png"
+  alt="Crane Logo"
+  className="hidden dark:block"
   width={640}
-  height={500}
+  height={640}
+  priority
+/>
+<Image
+  src="/img/Black-Crane-Logo.png"
+  alt="Crane Logo"
+  className="dark:hidden"
+  width={640}
+  height={640}
+  priority
 />
 
 ## Image Grid

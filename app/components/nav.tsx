@@ -1,10 +1,9 @@
 import Link from "next/link";
 import { ThemeSwitch } from "./theme-switch";
-import { metaData } from "../config";
 import Image from "next/image";
 
 const navItems = {
-  "/blog": { name: "Blog" },
+  "/mdx": {name: "MDX"},
   "/projects": { name: "Projects" },
   "/photos": { name: "Photos" },
 };
