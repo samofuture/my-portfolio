@@ -18,7 +18,10 @@ export const experiences: Experience[] = [
     monthStart: 1,
     monthEnd: 6,
     description:
-    ["Spearheaded the design, review, and execution of over 10 comprehensive test plans", "Generated dashboard visualizations of sensor data retrieved via the MQTT protocol (Python)", "Analyzed sensor data with statistics to correct sensor errors and variance by >250% abcdef", "Collaborated with 2 other teams to determine objectives and testing requirements"],
+    ["Spearheaded the design, review, and execution of over 10 comprehensive test plans",
+        "Generated dashboard visualizations of sensor data retrieved via the MQTT protocol (Python)",
+        "Analyzed sensor data with statistics to correct sensor errors and variance by >250%",
+        "Collaborated with 2 other teams to determine objectives and testing requirements"],
     url: "https://butlr.com/",
 },
 {
@@ -43,7 +46,9 @@ export const experiences: Experience[] = [
     monthStart: 6,
     monthEnd: 8,
     description:
-    ["Documented code and its implementation in ROS (C++) with Ubuntu Linux", "Recorded and presented data using real time SLAM algorithms and SSH remote connections", "Evaluated the performance of the robot and algorithm in an office environment"],
-    url: "https://example.com/",
+    ["Documented code and its implementation in ROS (C++) with Ubuntu Linux",
+        "Recorded and presented data using real time SLAM algorithms and SSH remote connections",
+        "Evaluated the performance of the robot and algorithm in an office environment"],
+    url: "https://cci.charlotte.edu/departments/department-of-computer-science/",
 },
 ];

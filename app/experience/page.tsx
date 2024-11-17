@@ -33,7 +33,7 @@ export default function Experiences() {
                 </span>
                 
                 <span className="tabular-nums">
-                    <a href="/Samuel-Crane-Resume.pdf" download className="flex flex-row">
+                    <a href="/Samuel-Crane-Resume.pdf" download className="flex flex-row ">
                         <h2 className="pr-4 text-4xl">Résumé</h2>
                         <IoDocumentTextOutline className="text-4xl"/>
                     </a>
