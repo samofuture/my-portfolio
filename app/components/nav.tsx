@@ -18,18 +18,20 @@ export function Navbar() {
               <Image 
                 src="/img/White-Crane-Logo.png"
                 alt="Crane Logo"
-                className="rounded-full hidden dark:block"
+                className="hidden dark:block"
                 width={64}
                 height={64}
                 priority
+                unoptimized
               />
               <Image
                 src="/img/Black-Crane-Logo.png"
                 alt="Crane Logo"
-                className="rounded-full dark:hidden"
+                className="dark:hidden"
                 width={64}
                 height={64}
                 priority
+                unoptimized
               />
               Sam Crane
             </div>
