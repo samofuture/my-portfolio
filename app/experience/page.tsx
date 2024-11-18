@@ -33,9 +33,9 @@ export default function Experiences() {
                 </span>
                 
                 <span className="tabular-nums">
-                    <a href="/Samuel-Crane-Resume.pdf" download className="flex flex-row ">
-                        <h2 className="pr-4 text-4xl">Résumé</h2>
-                        <IoDocumentTextOutline className="text-4xl"/>
+                    <a href="/Samuel-Crane-Resume.pdf" download className="flex flex-row items-center group">
+                        <h2 className="pr-4 text-3xl group-hover:text-transparent bg-gradient-to-r from-orange-500 to-blue-500 bg-clip-text transition-all duration-500">Resume</h2>
+                        <IoDocumentTextOutline className="text-4xl group-hover:text-blue-500 duration-500"/>
                     </a>
                 </span>
             </div>
