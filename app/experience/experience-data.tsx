@@ -1,3 +1,5 @@
+import { skill } from "app/components/skills";
+
 export interface Experience {
     company: string;
     title: string;
@@ -7,6 +9,7 @@ export interface Experience {
     yearEnd: number;
     description: string[];
     url: string;
+    skills: string[];
 }  
 
 export const experiences: Experience[] = [
@@ -24,6 +27,11 @@ export const experiences: Experience[] = [
         "Collaborated with 2 other teams to determine objectives and testing requirements"
     ],
     url: "https://butlr.com/",
+    skills: [
+        "Python",
+        "Git",
+        "Linux"
+    ]
 },
 {
     company: "iRobot",
@@ -38,6 +46,15 @@ export const experiences: Experience[] = [
         "Triggered a GTS to start and stop capturing within 20 ms using logging firmware (C)",
     ],
     url: "https://irobot.com/",
+    skills: [
+        "Python",
+        "C/C++",
+        "Git",
+        "PyTest",
+        "Test Automation",
+        "Robotics",
+        "Linux"
+    ]
 },
 {
     company: "UNCC",
@@ -50,7 +67,13 @@ export const experiences: Experience[] = [
         "Maintained and operated 3D printing and CNC laser technology",
         "Assisted students with introductory courses in Arduino and Autodesk Inventor"
     ],
-    url: "https://osds.charlotte.edu/freshman-learning-community/overview/"
+    url: "https://osds.charlotte.edu/freshman-learning-community/overview/",
+    skills: [
+        "Git",
+        "3D Printing",
+        "CNC",
+        "Autodesk Inventor CAD"
+    ]
 },
 {
     company: "iRobot",
@@ -65,10 +88,16 @@ export const experiences: Experience[] = [
         "Designed and troubleshooted software for robots in design challenges with 10 interns"
     ],
     url: "https://irobot.com/",
+    skills: [
+        "Python",
+        "Git",
+        "Robotics",
+        "Linux"
+    ]
 },
 {
     company: "UNCC",
-    title: "Undergraduate Research Asssistant",
+    title: "Undergraduate Research Assistant",
     monthStart: 6,
     yearStart: 2021,
     monthEnd: 8,
@@ -79,5 +108,12 @@ export const experiences: Experience[] = [
         "Evaluated the performance of the robot and algorithm in an office environment"
     ],
     url: "https://cci.charlotte.edu/departments/department-of-computer-science/",
+    skills: [
+        "Python",
+        "Git",
+        "Robotics",
+        "SLAM Algorithms",
+        "Linux"
+    ]
 },
 ];
