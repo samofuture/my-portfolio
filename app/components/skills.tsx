@@ -11,6 +11,8 @@ const skills: skill[] = [
     {name: "TypeScript", url: "https://github.com/samofuture/my-portfolio"},
     {name: "JavaScript", url: "https://github.com/samofuture/build-your-own-web-server"},
     {name: "React", url: "https://github.com/samofuture/my-portfolio"},
+    {name: "Next.js", url: "https://github.com/samofuture/my-portfolio"},
+    {name: "Tailwind", url: "https://github.com/samofuture/my-portfolio"},
     {name: "Git", url: "https://github.com/samofuture"},
     {name: "Machine Learning", url: "https://github.com/samofuture/Intro-to-ML"},
     {name: "Swift", url: "/projects#Chore Manager App - WIP"},
@@ -23,7 +25,13 @@ const skills: skill[] = [
     {name: "3D Printing", url: "https://github.com/samofuture/XY-Petri-Scanner"},
     {name: "CNC", url: "/experience#Makerspace Technician"},
     {name: "Autodesk Inventor CAD", url: "https://github.com/samofuture/XY-Petri-Scanner"},
-    {name: "SLAM Algorithms", url: "/experience#Undergraduate Research Assistant"}
+    {name: "SLAM Algorithms", url: "/experience#Undergraduate Research Assistant"},
+    {name: "Xcode", url: "/projects#Chore Manager App - WIP"},
+    {name: "Data Science", url: "/experience#Systems Test Engineering Contractor"},
+    {name: "Arduino", url: "/projects#Petri Scanning Robot"},
+    {name: "Raspberry Pi", url: "/projects#Solar Panel Cleaning Robot"},
+    {name: "PCB Design", url: "/projects#Bluetooth Split Keyboard"},
+    {name: "Easy EDA", url: "/projects#Bluetooth Split Keyboard"},
 ]
 
 export default function Skills() {
