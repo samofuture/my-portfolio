@@ -9,6 +9,7 @@ const navItems = {
 };
 
 export function Navbar() {
+  const logoSize = 96
   return (
     <nav className="py-5">
       <div className="flex flex-col md:flex-row md:items-center justify-between">
@@ -19,8 +20,8 @@ export function Navbar() {
                 src="/img/White-Crane-Logo.png"
                 alt="Crane Logo"
                 className="hidden dark:block"
-                width={64}
-                height={64}
+                width={logoSize}
+                height={logoSize}
                 priority
                 unoptimized
               />
@@ -28,12 +29,12 @@ export function Navbar() {
                 src="/img/Black-Crane-Logo.png"
                 alt="Crane Logo"
                 className="dark:hidden"
-                width={64}
-                height={64}
+                width={logoSize}
+                height={logoSize}
                 priority
                 unoptimized
               />
-              Sam Crane
+              <p className="hover:text-transparent bg-gradient-to-r from-orange-500 to-blue-500 bg-clip-text transition-all duration-500">Sam Crane</p>
             </div>
             
           </Link>

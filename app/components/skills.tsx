@@ -13,6 +13,7 @@ const skills: skill[] = [
     {name: "React", url: "https://github.com/samofuture/my-portfolio"},
     {name: "Next.js", url: "https://github.com/samofuture/my-portfolio"},
     {name: "Tailwind", url: "https://github.com/samofuture/my-portfolio"},
+    {name: "HTML", url: "https://github.com/samofuture/front-end-edu"},
     {name: "Git", url: "https://github.com/samofuture"},
     {name: "Machine Learning", url: "https://github.com/samofuture/Intro-to-ML"},
     {name: "Swift", url: "/projects#Chore Manager App - WIP"},
@@ -35,7 +36,7 @@ const skills: skill[] = [
 ]
 
 export default function Skills() {
-    return <div className="wrapper flex flex-row md:flex-col gap-5 max-w-full">
+    return <div className="wrapper flex flex-col gap-5 max-w-full">
         <Title text="Skills"/>
         <div className="flex flex-wrap gap-4 max-w-full items-center">
             {skills.map((skill, index) => (

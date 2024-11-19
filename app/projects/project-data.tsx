@@ -19,6 +19,7 @@ export const projects: Project[] = [
       "React",
       "Next.js",
       "Tailwind",
+      "HTML",
       "Git",
     ],
   },
