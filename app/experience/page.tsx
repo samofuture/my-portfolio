@@ -42,7 +42,7 @@ export default function Experiences() {
             
             <div className="space-y-6">
                 {experiences.map((job, index) => (
-                    <div>
+                    <div className="wrapper pb-8 pt-0">
                         <a
                             key={index}
                             href={job.url}
