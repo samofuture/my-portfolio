@@ -29,6 +29,8 @@ export const experiences: Experience[] = [
     url: "https://butlr.com/",
     skills: [
         "Python",
+        "Data Science",
+        "Test Automation",
         "Git",
         "Linux"
     ]
@@ -49,6 +51,7 @@ export const experiences: Experience[] = [
     skills: [
         "Python",
         "C/C++",
+        "Data Science",
         "Git",
         "PyTest",
         "Test Automation",
@@ -58,7 +61,7 @@ export const experiences: Experience[] = [
 },
 {
     company: "UNCC",
-    title: "Makerspace Technician",
+    title: "Makerspace Lab Coordinator",
     monthStart: 1,
     yearStart: 2021,
     monthEnd: 5,
@@ -90,6 +93,7 @@ export const experiences: Experience[] = [
     url: "https://irobot.com/",
     skills: [
         "Python",
+        "Data Science",
         "Git",
         "Robotics",
         "Linux"
