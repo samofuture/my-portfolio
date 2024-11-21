@@ -36,7 +36,7 @@ const skills: skill[] = [
 ]
 
 export default function Skills() {
-    return <div className="wrapper flex flex-col gap-5 max-w-full">
+    return <div className="wrapper flex flex-col max-w-full">
         <Title text="Skills"/>
         <div className="flex flex-wrap gap-4 max-w-full items-center">
             {skills.map((skill, index) => (
