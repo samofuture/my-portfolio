@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "./title";
-import Image from "next/Image";
+import Image from "next/image";
 
 export default function Education() {
     return <div className="wrapper">
