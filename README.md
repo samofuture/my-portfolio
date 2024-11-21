@@ -17,9 +17,3 @@ Check here for Website Status: [Uptime Robot Status Page](https://stats.uptimero
 
 - **Light and Dark Mode Toggle**: Switch between themes for better readability.
 - **Performance Tracking**: Monitor web performance with [Vercel Web Analytics](https://vercel.com/docs/speed-insights) and [Speed Insights](https://vercel.com/docs/speed-insights).
-
-## Starting Point
-
-Based on Vercel's Nexfolio Template found below.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F1msirius%2FNextfolio)
