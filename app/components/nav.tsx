@@ -9,7 +9,7 @@ const navItems = {
 };
 
 export function Navbar() {
-  const logoSize = 96
+  const logoSize = 80
   return (
     <nav className="py-5">
       <div className="flex flex-col md:flex-row md:items-center justify-between">
@@ -34,7 +34,7 @@ export function Navbar() {
                 priority
                 unoptimized
               />
-              <p className="hover:text-transparent bg-gradient-to-r from-orange-500 to-blue-500 bg-clip-text transition-all duration-500">Sam Crane</p>
+              <p className="text-gradient-hover">Sam Crane</p>
             </div>
             
           </Link>
@@ -44,7 +44,7 @@ export function Navbar() {
             <Link
               key={path}
               href={path}
-              className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative"
+              className="text-gradient-hover flex align-middle relative"
             >
               {name}
             </Link>

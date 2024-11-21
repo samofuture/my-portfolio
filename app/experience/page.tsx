@@ -27,7 +27,7 @@ export default function Experiences() {
 
     return (
         <section>
-            <div className="w-full flex flex-col md:flex-row justify-between items-baseline border-b-[1px] border-b-slate-600">
+            <div className="w-full flex flex-col md:flex-row justify-between items-baseline border-b-[1px] border-b-slate-600 pt-5">
                 <span className="tracking-tight">
                     <h1 className="mb-8 text-4xl font-medium">Experiences</h1>
                 </span>

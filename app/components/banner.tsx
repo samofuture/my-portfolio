@@ -17,7 +17,7 @@ export default function Banner() {
             
         </div>
         <div className="flex flex-col items-center md:items-start">
-            <h1 className="text-5xl font-bold text-white">Sam Crane</h1>
+            <h1 className="text-5xl font-bold">Sam Crane</h1>
             <h3 className="text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-orange-500 tracking-wide">
                 Software Engineer
             </h3>

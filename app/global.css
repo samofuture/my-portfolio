@@ -4,7 +4,10 @@
 
 @layer components {
   .wrapper {
-    @apply border-b-[1px] border-b-slate-600 py-20;
+    @apply border-b-[1px] border-b-slate-600 py-10;
+  }
+  .text-gradient-hover{
+    @apply hover:text-transparent bg-gradient-to-r from-orange-500 to-blue-500 bg-clip-text transition-all duration-500
   }
 }
 

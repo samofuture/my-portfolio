@@ -24,6 +24,9 @@ module.exports = {
         'pos-0': '0% 0%',
         'pos-100': '100% 100%',
       },
+      colors: {
+        charlotteGreen: '#0C703C',
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],
