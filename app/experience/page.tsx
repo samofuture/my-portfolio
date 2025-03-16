@@ -1,10 +1,9 @@
 import React from "react";
 import type { Metadata } from "next";
 import { experiences } from "./experience-data";
-import { IoDocumentTextOutline } from "react-icons/io5";
 
 export const metadata: Metadata = {
-  title: "Experiences",
+  title: "Experience",
   description: "My Experience",
 };
 
@@ -29,22 +28,14 @@ export default function Experiences() {
         <section>
             <div className="w-full flex flex-col md:flex-row justify-between items-baseline border-b-[1px] border-b-slate-600 pt-5">
                 <span className="tracking-tight">
-                    <h1 className="mb-8 text-4xl font-medium">Experiences</h1>
-                </span>
-                
-                <span className="tabular-nums pb-8 md:pb-0">
-                    <a href="/Samuel-Crane-Resume.pdf" download className="flex flex-row items-center group">
-                        <h2 className="pr-4 text-3xl group-hover:text-transparent bg-gradient-to-r from-orange-500 to-blue-500 bg-clip-text transition-all duration-500">Resume</h2>
-                        <IoDocumentTextOutline className="text-4xl group-hover:text-blue-500 duration-500"/>
-                    </a>
+                    <h1 className="mb-8 text-4xl font-medium">Experience</h1>
                 </span>
             </div>
 
             <div className="space-y-6 pt-8">
                 {experiences.map((job, index) => (
-                    <div className="wrapper pb-8 pt-0">
+                    <div key={job.id} className="wrapper pb-8 pt-0">
                         <a
-                            key={index}
                             href={job.url}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -71,7 +62,7 @@ export default function Experiences() {
                         </a>
                         <div className="flex flex-wrap gap-4 max-w-full items-center">
                             {job.skills.map((skill, skillIndex) => (
-                                <button className="px-3 py-1 rounded-full transition-all duration-500 bg-gradient-to-tl to-#121212/100 via-blue-700/50 from-orange-700 bg-size-200 bg-pos-0 hover:bg-pos-100">
+                                <button key={skillIndex} className="px-3 py-1 rounded-full transition-all duration-500 bg-gradient-to-tl to-#121212/100 via-blue-700/50 from-orange-700 bg-size-200 bg-pos-0 hover:bg-pos-100">
                                     { skill }
                                 </button>
                             ))}

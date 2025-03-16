@@ -1,6 +1,7 @@
-import { skill } from "app/components/skills";
+import {v4 as uuid} from 'uuid';
 
 export interface Experience {
+    id: string;
     company: string;
     title: string;
     monthStart: number;
@@ -14,6 +15,7 @@ export interface Experience {
 
 export const experiences: Experience[] = [
 {
+    id: uuid(),
     company: "Butlr",
     title: "Systems Test Engineering Contractor",
     monthStart: 1,
@@ -36,6 +38,7 @@ export const experiences: Experience[] = [
     ]
 },
 {
+    id: uuid(),
     company: "iRobot",
     title: "Systems Test Engineering Intern",
     monthStart: 5,
@@ -44,7 +47,7 @@ export const experiences: Experience[] = [
     yearEnd: 2023,
     description: [
         "Optimized the existing evaluators speed by 26x while improving its accuracy (Python)",
-        "Integrated a GTS software into a PyTest based automated robot testing software to automate 5 tests", 
+        "Integrated a GTS software into a PyTest based robot testing software to fully automate 5 tests", 
         "Triggered a GTS to start and stop capturing within 20 ms using logging firmware (C)",
     ],
     url: "https://irobot.com/",
@@ -60,6 +63,7 @@ export const experiences: Experience[] = [
     ]
 },
 {
+    id: uuid(),
     company: "UNCC",
     title: "Makerspace Lab Coordinator",
     monthStart: 1,
@@ -79,6 +83,7 @@ export const experiences: Experience[] = [
     ]
 },
 {
+    id: uuid(),
     company: "iRobot",
     title: "Systems Test Engineering Intern",
     monthStart: 7,
@@ -86,7 +91,7 @@ export const experiences: Experience[] = [
     monthEnd: 12,
     yearEnd: 2022,
     description: [
-        "Developed 1,500+ lines of Python code to automatically evaluate robot performance across 5 tests using 6DOF data from a Ground Truth System (GTS)",  
+        "Developed 1,500+ lines of Python code with object-oriented programming (OOP) to automatically evaluate robot performance across 5 tests using 6DOF data from a Ground Truth System (GTS) while providing modularity, maintainability, and readability",  
         "Evaluated the output of an RTK GTS to be within 2 cm of its reported position",
         "Designed and troubleshooted software for robots in design challenges with 10 interns"
     ],
@@ -100,6 +105,7 @@ export const experiences: Experience[] = [
     ]
 },
 {
+    id: uuid(),
     company: "UNCC",
     title: "Undergraduate Research Assistant",
     monthStart: 6,
@@ -107,9 +113,9 @@ export const experiences: Experience[] = [
     monthEnd: 8,
     yearEnd: 2021,
     description: [
-        "Documented code and its implementation in ROS (C++) with Ubuntu Linux",
+        "Implemented and documented a dual camera SLAM algorithm in ROS C++ with Ubuntu Linux ",
         "Recorded and presented data using real time SLAM algorithms and SSH remote connections",
-        "Evaluated the performance of the robot and algorithm in an office environment"
+        "Simulated environments using Gazebo to evaluate SLAM-based navigation algorithms"
     ],
     url: "https://cci.charlotte.edu/departments/department-of-computer-science/",
     skills: [
