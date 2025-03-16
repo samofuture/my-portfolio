@@ -1,4 +1,7 @@
+import {v4 as uuid} from 'uuid';
+
 export interface Project {
+  id: string;
   title: string;
   year: number;
   description: string;
@@ -8,6 +11,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: uuid(),
     title: "Website Portfolio - WIP",
     year: 2024,
     description:
@@ -24,6 +28,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: uuid(),
     title: "Chore Manager App - WIP",
     year: 2024,
     description:
@@ -36,6 +41,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: uuid(),
     title: "Build Your Own Web Server - WIP",
     year: 2024,
     description:
@@ -50,6 +56,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: uuid(),
     title: "Lottery Analysis with PyTest",
     year: 2024,
     description:
@@ -65,6 +72,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: uuid(),
     title: "Solar Panel Cleaning Robot",
     year: 2023,
     description:
@@ -79,6 +87,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: uuid(),
     title: "Petri Scanning Robot",
     year: 2022,
     description:
@@ -93,6 +102,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: uuid(),
     title: "Bluetooth Split Keyboard",
     year: 2022,
     description:
