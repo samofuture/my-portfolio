@@ -48,7 +48,7 @@ export default function Experiences() {
                                         {job.company}: {job.title}
                                     </span>
                                     <span className="text-neutral-600 dark:text-neutral-400 tabular-nums">
-                                        {Months.get(job.monthStart)} {job.yearStart} - {Months.get(job.monthEnd)} {job.yearEnd}
+                                        {Months.get(job.monthStart)} {job.yearStart} - {job.current ? "Present" : `${Months.get(job.monthEnd)} ${job.yearEnd}`}
                                     </span>
                                 </div>
                                 <div className="max-w-[766px] prose prose-neutral dark:prose-invert pt-3">

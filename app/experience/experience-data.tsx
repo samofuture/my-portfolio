@@ -11,9 +11,31 @@ export interface Experience {
     description: string[];
     url: string;
     skills: string[];
+    current: boolean;
 }  
 
 export const experiences: Experience[] = [
+{
+    id: uuid(),
+    company: "Berkshire Grey",
+    title: "SQA Engineer",
+    monthStart: 4,
+    yearStart: 2025,
+    monthEnd: 11,
+    yearEnd: 1985,
+    description: [
+        "Developed and executed comprehensive test cases, including happy path and boundary testing, to ensure product quality",
+        "Validated software release functionality and stability, enhancing the overall customer experience",
+        "Conducted root cause analysis on defects, providing developers with valuable insights",
+    ],
+    url: "https://www.berkshiregrey.com/",
+    skills: [
+        "Git",
+        "Jira",
+        "ROS 2 (Robot Operating System)",
+    ],
+    current: true,
+},
 {
     id: uuid(),
     company: "Butlr",
@@ -35,7 +57,8 @@ export const experiences: Experience[] = [
         "Test Automation",
         "Git",
         "Linux"
-    ]
+    ],
+    current: false,
 },
 {
     id: uuid(),
@@ -60,7 +83,8 @@ export const experiences: Experience[] = [
         "Test Automation",
         "Robotics",
         "Linux"
-    ]
+    ],
+    current: false,
 },
 {
     id: uuid(),
@@ -80,7 +104,8 @@ export const experiences: Experience[] = [
         "3D Printing",
         "CNC",
         "Autodesk Inventor CAD"
-    ]
+    ],
+    current: false,
 },
 {
     id: uuid(),
@@ -102,7 +127,8 @@ export const experiences: Experience[] = [
         "Git",
         "Robotics",
         "Linux"
-    ]
+    ],
+    current: false,
 },
 {
     id: uuid(),
@@ -124,6 +150,7 @@ export const experiences: Experience[] = [
         "Robotics",
         "SLAM Algorithms",
         "Linux"
-    ]
+    ],
+    current: false,
 },
 ];
