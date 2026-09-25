@@ -2,10 +2,12 @@
 import * as React from "react";
 import { useTheme } from "next-themes";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
-import type { ThemeProviderProps } from "next-themes/dist/types";
+import type { ComponentProps } from "react";
 import { FaCircleHalfStroke } from "react-icons/fa6";
 
 const storageKey = 'theme-preference';
+
+type ThemeProviderProps = ComponentProps<typeof NextThemesProvider>;
 
 export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
   return (
